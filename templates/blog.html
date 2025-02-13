@@ -1,0 +1,14 @@
+<link href="/static/blog.css" rel="stylesheet">
+
+@if auth()
+  <form action="/blog/create" method="POST">
+    {{ csrf_field }}
+  
+    <input type="name" name="title">
+    <textarea name="body"></textarea>
+    
+    <input type="submit" value="Post!">
+  </form>
+@else
+  <a href="/login">Please Login</a>
+@endif
