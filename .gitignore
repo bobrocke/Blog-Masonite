@@ -6,7 +6,7 @@ venv
 # environment
 .env
 .env-example
-.env.testing
+.env.*
 # npm
 node_modules
 package-lock.json
